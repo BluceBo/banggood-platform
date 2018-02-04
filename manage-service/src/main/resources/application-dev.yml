@@ -1,0 +1,19 @@
+server:
+  port: 8081
+  context-path: /manage-service
+debug: true
+spring:
+  datasource:
+    data-username: root
+    data-password: 123
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/taotao?useUnicode=true&characterEncoding=utf8&autoReconnect=true
+    type: com.alibaba.druid.pool.DruidDataSource
+  http:
+    encoding:
+      charset: utf-8
+  messages:
+    encoding: UTF-8
+mybatis:
+  config-location: classpath:/mybatis/mybatis-config.xml
+  mapper-locations: classpath:/mapper/*.xml
